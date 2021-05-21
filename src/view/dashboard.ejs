@@ -96,7 +96,8 @@
                                     </p>
                                     <%}%>
                                         <input type="hidden" name="id" value=<%=data[i].id %> >
-                                        <p class="ml-auto text-right">Assigned : <%=data[i].start%>
+                                        <p class="ml-auto text-right">Assigned :
+                                            <%=String(data[i].start).split("GMT")[0]%>
                                         </p>
                         </div>
                         <div class="card-body">

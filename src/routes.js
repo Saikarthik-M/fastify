@@ -70,7 +70,6 @@ const routes = [
             const { phone, password } = req.body;
             const phoneValidation = await validator.checkUserPhone(phone)
             const passwordValidation = await validator.checkUserPasswordStrength(password)
-            console.log(phone)
             if (phoneValidation == false || passwordValidation == false) {
                 reply.status(406).send("Not A Proper Input")
             }
